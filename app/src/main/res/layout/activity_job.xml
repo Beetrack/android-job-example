@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:padding="16dp"
+    tools:context="cl.beetrack.androidjobtest.JobActivity" >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/startPeriodicJobBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Start periodic job" />
+
+    <Button
+        android:id="@+id/stopPeriodicJobBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Stop periodic job" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/manualJobBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="New manual job" />
+
+    <Button
+        android:id="@+id/sendLogsBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Send Logs" />
+
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/refreshLogsBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Refresh Logs" />
+
+    <Button
+        android:id="@+id/deleteLogsBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Delete Logs" />
+
+  </LinearLayout>
+
+  <EditText
+      android:id="@+id/logsEt"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="top"
+      android:editable="false" />
+
+</LinearLayout>
